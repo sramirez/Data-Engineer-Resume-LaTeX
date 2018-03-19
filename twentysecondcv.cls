@@ -164,8 +164,8 @@
 		\end{tikzpicture}
 	}
 }
-\newcommand\projects[1]{ 
-	\renewcommand{\projects}{
+\newcommand\software[1]{ 
+	\renewcommand{\software}{
 		{#1}
 	}
 }
@@ -202,7 +202,7 @@
       \ifthenelse{\equal{\cvnumberphone}{}}{}{
       		{$
               \begin{array}{l}
-              \hspace{4mm} \Huge \textnormal{\faMobile} 
+              \hspace{4mm} \Huge \textnormal{\faPhone} 
               \end{array}
               $} 
             & \cvnumberphone\\}
@@ -217,7 +217,7 @@
       \ifthenelse{\equal{\cvmail}{}}{}{
             {$
               \begin{array}{l}
-              \hspace{2.5mm} \huge \textnormal{\textcolor{yt}{\faEnvelopeO}}
+              \hspace{2.5mm} \huge \textnormal{\textcolor{yt}{\faEnvelopeAlt}}
               \end{array}
               $} 
             & \href{mailto:\cvmail}{\cvmail} \\}
@@ -256,9 +256,9 @@
 		 \programming
          
         \vspace{4mm}
-        \profilesection{Projects}{3cm} 
+        \profilesection{Software}{3cm} 
         
-        \projects
+        \software
       
   \end{textblock}
 }
