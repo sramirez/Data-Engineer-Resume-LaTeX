@@ -199,6 +199,15 @@
     \vspace{4mm}
     \renewcommand{\arraystretch}{2}
     \begin{tabular}{p{1cm} @{\hskip 0.5cm}p{5cm}}
+		\ifthenelse{\equal{\aboutme}{}}{}{
+      		{$
+              \begin{array}{l}
+              \hspace{4mm} \Huge \textnormal{\faEdit} 
+              \end{array}
+              $} 
+            & \aboutme\\}
+            
+                  
       \ifthenelse{\equal{\cvnumberphone}{}}{}{
       		{$
               \begin{array}{l}
@@ -240,7 +249,7 @@
     \end{tabular}
 
     %------------------------------------------------
-    \vspace{4mm}
+    \vspace{3mm}
     \profilesection{Skills}{4cm}
     
     {\large \textbf{Overview}}
@@ -255,7 +264,7 @@
 
 		 \programming
          
-        \vspace{4mm}
+        \vspace{3mm}
         \profilesection{Software}{3cm} 
         
         \software

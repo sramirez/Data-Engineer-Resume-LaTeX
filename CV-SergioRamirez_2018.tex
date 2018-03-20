@@ -33,23 +33,28 @@
 }
 
 % Programming skill bars
-\programming{{C $\textbullet$ C++ / 3}, {Python $\textbullet$ Java $\textbullet$ \large \LaTeX / 3.5}, {Scala $\textbullet$ Spark $\textbullet$ R / 5}}
+\programming{{C $\textbullet$ C++ $\textbullet$ Python / 3}, {Java $\textbullet$ Flink $\textbullet$ \large \LaTeX / 4}, {Scala $\textbullet$ Spark $\textbullet$ R / 5}}
 
 % Projects text
 \software{
-\textbf{DecAR} - An augmented reality interior decoration app for Android \\
-      
+\textbf{Spark-IT-FS} - A distributed feature selection framework for Apache Spark | 82 \faStar\\
+\textbf{fast-mRMR} - An optimized version of the mRMR feature selector for Spark and Nvidia-GPU | 34 \faStar\\
+\textbf{Spark-MDLP} - A Spark implementation of the MDLP discretizer (presented in Spark Summit '17) | 29 \faStar\\
+\textbf{MOAReduction} - A library for streaming data reduction in MOA | 2 \faStar\\
+%\textbf{Spark-IS-streaming} A nearest neighbor classifier for high-speed big data streams with instance selection | 1 \faStar\\\\
+Check my GitHub profile, or my Spark packages: \url{https://spark-packages.org/user/sramirez}.
 }
-
 %----------------------------------------------------------------------------------------
 %	 PERSONAL INFORMATION
 %----------------------------------------------------------------------------------------
 % If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
 
-\cvname{Sergio Ramírez} % Your name
+\cvname{Sergio Ramírez Gallego} % Your name
 \cvjobtitle{ Data Scientist } % Job
+%Born in 1988 in Jaén, Spain.
 % title/career
 
+\aboutme{Born in 1988 in Jaén, Spain} %Luis de Narváez, 7 3L\\18014 Granada, Spain.}
 \cvlinkedin{/in/sramirezg}
 \cvgithub{sramirez}
 \cvnumberphone{(34) 699 72 40 43} % Phone number
@@ -73,14 +78,14 @@
         {}
         {Ph. D., Computer Science \textnormal{CUM LAUDE}}
         {\href{http://www.ugr.es/}{University of Granada, Spain}}
-        {{\includegraphics[scale=0.04]{img/trophy.png}} Best Ph. D. Thesis Project award, by Spanish Association of
+        {{\includegraphics[scale=0.04]{img/trophy.png}} Best Ph. D. Thesis Project award by Spanish Association of
 Artificial Intelligence (AEPIA)}
         {}
 	
 	\twentyitem
     	{2012 - 2013}
         {}
-        {MSc., Computer Science \textnormal{(GPA: 8.1/10.0)}}
+        {MSc., Soft Computing and Intelligent Systems \textnormal{(GPA: 8.1/10.0)}}
         {\href{http://www.ugr.es/}{University of Granada, Spain}}
         {}
         {}
@@ -101,6 +106,11 @@ Artificial Intelligence (AEPIA)}
 	%\twentyitem{<dates>}{<title>}{<organization>}{<location>}{<description>}
 \end{twenty}
 
+%----------------------------------------------------------------------------------------
+%	 RESEARCH
+%----------------------------------------------------------------------------------------
+
+
 \section{Research}
 \begin{twenty}
 	\twentyitem
@@ -112,9 +122,11 @@ Artificial Intelligence (AEPIA)}
         {
        	\textbf{Thesis}: Distributed Data Reduction Algorithms for Big Data
         {\begin{itemize}
-        \item Proposed a scalable stepwise deterministic method to reliably integrate datasets without labeled data. The method performs comparably with a method that incorporates a Support Vector Machine
-        \item Constructed a rich longitudinal dataset to enable comphrehensive time-series analyses about WWI Canadian society and military
-        \item \textbf{Tools}: R, Python, scikit-learn, BeautifulSoup, pandas, matplotlib \vspace{2mm}
+        \item Proposed several scalable data reduction (discretization, feature and instance selection) techniques for Apache Spark. Aimed at decreasing the complexity of large-scale static and dynamic DBs.
+        %\item Proposed an scalable method that reduces noisiness in databases fed by high-speed big data steams. Our algorithm (developed on Spark Streaming) maintains a polished case-base with the most relevant instances seen so far.
+        \item \textbf{Tools}: Spark, Scala, Java, MOA, Weka, Flink, \LaTeX, Git, Eclipse.
+        %\item \textbf{Internships}: PWr, Wroclaw, Poland (3m), MDH, Sweden (3m).         
+        \item Summary of publications: \url{https://scholar.google.com/citations?user=cEkfaW4AAAAJ}
 		\end{itemize}}
         }
 \end{twenty}
@@ -125,58 +137,88 @@ Artificial Intelligence (AEPIA)}
 
 \section{Experience}
 
+
+
 \begin{twenty} % Environment for a list with descriptions
+
 \twentyitem
-    	{April 2017 -}
-		{Present}
-        {Data Engineer}
-        {\href{http://www.bell.ca/}{Bell}}
+    	{Sep 2014 -}
+		{Feb 2018}
+        {Researcher}
+        {\href{http://www.ugr.es/}{University of Granada}}
         {}
         {\begin{itemize}
-        \item Currently involved in building a realtime data ingestion pipeline on a Kafka cluster using Spark Streaming, to detect SMS spammers on Bell's network in realtime
+        \item FPU Spanish Research and Teaching Fellowship @ Department of
+Computer Science and Artificial Intelligence.
         \end{itemize}}
         \\
-	\twentyitem
-    	{Sep 2015 -}
-		{May 2016}
-        {Co-founder \& Full Stack Developer}
-        {\href{http://www.localxchange.ca/}{LocalXChange Inc.}}
+ \twentyitem
+    	{Dec 2016 -}
+		{May 2017}
+        {Data Scientist}
+        {\href{http://www.granadalapalma.com/}{University of Granada \& LaPalma Cooperative}}
         {}
-        {
         {\begin{itemize}
-        \item In a team of 2, raised \$8,000 in funding from The Hub incubator at the University of Guelph, to develop a prototype hyperlocal content platform, aimed at delivering local news and events from community organizations to local users in realtime (i.e., hyperlocal)
-        \item In a team of 3, built hybrid mobile \& web apps with Ionic, Angular.js and MongoDB, surpassing 1,000 users within a month since launch
-        \item Met with city officials, including the Mayor of Guelph, and university officials to discuss marketing \& business strategies for the platform 
-    \end{itemize}}
-        }
-    \\   
+        	\item Crop forecasting and detection of plagues in greenhouses using weather conditions. Data analysis, visualization and time-series forecasting. \textbf{Tools}: R, ggplot2, forecast, tsExpKit, knitr.
+        \end{itemize}}
+        
+\\
+ \twentyitem
+    	{Oct 2013 -}
+		{Mar 2015}
+        {Data Scientist}
+        {\href{http://www.cetaqua.com/en/cetaqua}{University of Granada \& CETAQUA foundation}}
+        {}
+        {\begin{itemize}
+        	\item Water-consumption forecasting in Spanish eastern cities. Data analysis, visualization and time-series forecasting. \textbf{Tools}: R, ggplot2, forecast, tsExpKit, knitr.
+        \end{itemize}}
+        
+\\
+        
+	  \twentyitem
+    	{Apr 2013 -}
+		{Dec 2013}
+        {Data Scientist}
+        {\href{https://www.ugr.es/}{University of Granada}}
+        {}
+        {\begin{itemize}
+        	\item Time-series forecasting of railway deficiencies. Multi-objective optimization for railway infrastructure maintenance. In cooperation with VIAS Inc., ADIF, and others.
+        	%En GEOMAF se hizo una predicción de los fallos en vías de tren usando series temporales, con R y Java y usando PMML como interfaz para portar modelos de un lenguaje a otro En OPTIRAIL hicimos generación de planes de mantenimiento de infraestructuras ferroviarias con algoritmos multiobjetivo, en R y en C++También hicimos un modelo del deterioro de las vías en función del tiempo y del mantenimiento que se le aplica, con un exponential fitting 
+        	\textbf{Tools}: R, Java, PMML, C++.
+        \end{itemize}}
+        
+\\
+	  \twentyitem
+    	{Mar 2012 -}
+		{Apr 2013}
+        {Full Stack Developer}
+        {\href{https://www.indracompany.com/en/}{University of Granada \& Indra Systems}}
+        {}
+        {\begin{itemize}
+        	\item Development of a cloud computing platform (APlaCA). Development of a Eclipse plugin to code/deploy Java apps, and manage non-relational databases in APlaCA. \textbf{Tools}: Java, Eclipse, HTML, JS, SQL.
+        \end{itemize}}
+        \\
+        \twentyitem
+    	{Dec 2011 -}
+		{Mar 2012}
+        {Data Scientist}
+        {\href{http://en.orolivesur.com/}{University of Jaen \& OroLiveSur Inc.}}
+        {}
+        {\begin{itemize}
+        	\item Extraction and analysis of user-patterns in an e-commerce site. \textbf{Tools}: Java, Weka, KEEL.
+        \end{itemize}}
+        \\
     \twentyitem
-   		{Sep 2015 -}
-		{Dec 2016}
+   		{Oct 2015 -}
+		{Feb 2017}
         {Graduate Teaching Assistant}
-        {\href{http://www.uoguelph.ca}{University of Guelph}}
+        {\href{http://decsai.ugr.es/index.php}{Dept. of Computer Science and AI, UGR}}
         {}
         {
         {\begin{itemize}
-        \item TA for CIS*2430 (OOP), CIS*4150 (Software Reliability \& Testing) and CIS*3530 (Database Systems \& Concepts) courses
+        \item TA for \textit{Data Structures}, \textit{Design and Development of Information Systems} courses (practices).
     \end{itemize}}
         }
-     \\
-     \twentyitem
-   		{Dec 2013 -}
-		{Apr 2015}
-        {Test Automation Engineer}
-        {\href{http://www.synechron.com/}{Synechron}}
-        {}
-        {
-        \begin{itemize}
-        \item Developed a \textit{Keyword Driven} and \textit{Behavior Driven} test automation framework for \href{https://www.microsoft.com/en-ca/dynamics/crm.aspx}{Microsoft Dynamics CRM}. Wrote an efficient recursive function to search multi-level frames, reducing development time by approximately two weeks. Won SPOT award {\includegraphics[scale=0.05]{img/trophy.png}}
-        
-        \textit{My work opened up a new position in the organization, enabling it to earn additional revenue of \$3,500 per month (estimated)}
-        \item Demonstrated by proof of concept that rewriting a test automation framework for \href{https://www.microsoft.com/en-ca/dynamics/erp-ax-overview.aspx}{Microsoft Dynamics AX}, using an open source library (White) instead of a proprietary one (Coded UI), would enable the team to save \$4,000 annually by downgrading the prevailing edition of Microsoft Visual Studio from \textit{Premium} to \textit{Professional}
-    \end{itemize}
-    	}
-        
 	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
 \end{twenty}
 
