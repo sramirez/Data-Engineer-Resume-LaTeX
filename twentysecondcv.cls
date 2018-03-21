@@ -249,7 +249,7 @@
     \end{tabular}
 
     %------------------------------------------------
-    \vspace{3mm}
+    \vspace{1mm}
     \profilesection{Skills}{4cm}
     
     {\large \textbf{Overview}}
