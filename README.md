@@ -3,7 +3,7 @@
 This is the template I use for my own resume. Forked from opensorceror.
 
 ## License
-º
+
 ```
 Copyright 2016 Harshavardhan Gadgil
 
