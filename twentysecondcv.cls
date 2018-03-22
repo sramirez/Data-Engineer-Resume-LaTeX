@@ -185,7 +185,7 @@
 
     %------------------------------------------------
     
-        \vspace{4mm}
+        \vspace{\parskip}
     {\Huge\color{pblue}\cvname}
     
     \vspace{2mm}
@@ -290,7 +290,7 @@
 
 
 \renewcommand{\section}[1]{
-  \par\vspace{\parskip}
+  \par\vspace{.2\parskip}
 	{%
 		\LARGE\headingfont\color{headercolor}%
 		\@sectioncolor #1%
