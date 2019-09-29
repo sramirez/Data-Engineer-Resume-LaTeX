@@ -226,7 +226,7 @@
       \ifthenelse{\equal{\cvmail}{}}{}{
             {$
               \begin{array}{l}
-              \hspace{2.5mm} \huge \textnormal{\textcolor{yt}{\faEnvelopeAlt}}
+              \hspace{2.5mm} \huge \textnormal{\textcolor{yt}{\faEnvelope}}
               \end{array}
               $} 
             & \href{mailto:\cvmail}{\cvmail} \\}

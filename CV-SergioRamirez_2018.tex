@@ -12,6 +12,9 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
+
+%% BUILD with XELATEX, install texlive-full, and replace faEnvelopeAlt by faEnvelope
+
 %----------------------------------------------------------------------------------------
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 	%----------------------------------------------------------------------------------------
@@ -33,17 +36,18 @@
 }
 
 % Programming skill bars
-\programming{{C $\textbullet$ C++ $\textbullet$ Python $\textbullet$ Maven / 2}, {Java $\textbullet$ Git $\textbullet$ Flink $\textbullet$ R / 4}, {Scala $\textbullet$ Spark $\textbullet$ \large \LaTeX / 6}}
+\programming{{C $\textbullet$ Docker $\textbullet$ Cloud $\textbullet$ Linux scripting / 2}, {Java $\textbullet$ Git $\textbullet$ Flink $\textbullet$ R / 4}, {Scala $\textbullet$ Spark $\textbullet$ Python / 6}}
 
 % Projects text
 \software{
-\textbf{Spark-IT-FS} - A distributed feature selection framework for Apache Spark | 82 \faStar\\
-\textbf{fast-mRMR} - An optimized version of the mRMR feature selector for Spark and Nvidia-GPU | 34 \faStar\\
-\textbf{Spark-MDLP} - A Spark implementation of the MDLP discretizer (presented in Spark Summit '17) | 29 \faStar\\
-\textbf{MOAReduction} - A library for streaming data reduction in MOA | 2 \faStar\\
+\textbf{Spark-IT-FS} - A distributed feature selection framework for Apache Spark | 111 \faStar\\
+\textbf{fast-mRMR} - An optimized version of the mRMR feature selector for Spark and Nvidia-GPU | 57 \faStar\\
+\textbf{Spark-MDLP} - A Spark implementation of the MDLP discretizer (presented in Spark Summit '17) | 39 \faStar\\
+\textbf{FeuerFreiKiller} - A production-ready deep learning project to automatically detect fire in nature from spectogram images
+%\textbf{MOAReduction} - A library for streaming data reduction in MOA | 2 \faStar\\
 %\textbf{Spark-IS-streaming} A nearest neighbor classifier for high-speed big data streams with instance selection | 1 \faStar\\\\
 \\
-\emph{1\textsuperscript{st} and 3\textsuperscript{rd} project are Spark-packages. Check my GitHub profile for more info.}% \url{https://spark-packages.org/user/sramirez}.
+\emph{1\textsuperscript{st} and 3\textsuperscript{rd} projects are Spark-packages. Check my GitHub profile for more info.}% \url{https://spark-packages.org/user/sramirez}.
 }
 %----------------------------------------------------------------------------------------
 %	 PERSONAL INFORMATION
@@ -55,7 +59,7 @@
 %Born in 1988 in Jaén, Spain.
 % title/career
 
-\aboutme{Born in 1988 in Jaén, Spain} %Luis de Narváez, 7 3L\\18014 Granada, Spain.}
+\aboutme{Born in 1988 in Jaén, Spain}
 \cvlinkedin{/in/sramirezg}
 \cvgithub{sramirez}
 \cvnumberphone{(34) 699 72 40 43} % Phone number
@@ -73,7 +77,14 @@
 %----------------------------------------------------------------------------------------
 \section{Education}
 
-\begin{twenty} % Environment for a list with descriptions
+\begin{twenty} % Environment for a list with descriptions+
+	\twentyitem
+    	{2018 - Now}
+        {}
+        {Self-learning: online courses (see LinkedIn profile)}
+        {\href{}{}}
+        {}
+        {}
 	\twentyitem
     	{2013 - 2018}
         {}
@@ -123,11 +134,11 @@ Artificial Intelligence (AEPIA)}
         {
        	\textbf{Thesis}: Distributed Data Reduction Algorithms for Big Data
         {\begin{itemize}
-        \item Proposed several scalable data reduction (discretization, feature and instance selection) techniques for Apache Spark. Aimed at decreasing the complexity of large-scale static and dynamic DBs.
+        \item Development of scalable data reduction (discretization, feature and instance selection) algorithms for Spark. Achivements: fast feature selection on 30M cols (kdd2010), and discretization on 60M rows.
         %\item Proposed an scalable method that reduces noisiness in databases fed by high-speed big data steams. Our algorithm (developed on Spark Streaming) maintains a polished case-base with the most relevant instances seen so far.
-        \item \textbf{Tools}: Spark, Scala, Java, MOA, Flink, \LaTeX, Git, Maven, Eclipse.
-        %\item \textbf{Internships}: PWr, Wroclaw, Poland (3m), MDH, Sweden (3m).         
-        \item Summary of publications: \url{https://scholar.google.com/citations?user=cEkfaW4AAAAJ}
+        \item \textbf{Tools}: Spark, Scala, Java, MOA, Flink, \LaTeX, Git, Maven.
+        \item \textbf{Internships}: Wroclaw University of Science and Technology, Poland \& M\"alardalen University, V\"aster\aa s, Sweden. 3 months each.        
+        \item Publications: \url{https://scholar.google.com/citations?user=cEkfaW4AAAAJ}
 		\end{itemize}}
         }
 \end{twenty}
@@ -143,16 +154,36 @@ Artificial Intelligence (AEPIA)}
 \begin{twenty} % Environment for a list with descriptions
 
 \twentyitem
+    	{March 2019 - }
+		{Now}
+        {Data Scientist \& ML Engineer}
+        {\href{https://www.docomodigital.com/}{Docomo Digital Spain Inc.}}
+        {}
+        {\begin{itemize}
+        \item Default prediction in mobile billing. Focused on developing machine learning models, production deployment,  unit testing, scaling and performance tuning. \textbf{Tools}: Spark, Scala, Python, MongoDB, Jenkins, LDA, LightGBM, Jupyter. 
+        \item Conducted interviews for junior data scientist roles.
+        \end{itemize}}
+        \\
+\twentyitem
+    	{Jun 2018 -}
+		{March 2019}
+        {Data Scientist \& ML Engineer consultant}
+        {\href{http://www.stratio.com/}{Stratio Big Data Inc.}}
+        {}
+        {\begin{itemize}
+        \item Projects: Default prediction in mobile billing. Customer churn prediction. Advertisement optimization in social media. \textbf{Tools}: Spark, Scala, Python, MongoDB, Jenkins, XGBoost, Kibana. 
+        \end{itemize}}
+        \\
+\twentyitem
     	{Sep 2014 -}
 		{Feb 2018}
         {Researcher \& Graduate Teaching Assistant}
         {\href{http://www.ugr.es/}{University of Granada}}
-        {}
-        {\begin{itemize}
-        \item FPU Spanish Research and Teaching Fellowship @ Department of
-Computer Science and Artificial Intelligence.
-        \end{itemize}}
-        \\
+        {}        %\\
+        %{\begin{itemize}
+        %\item FPU Spanish Research and Teaching Fellowship @ Department of Computer Science and Artificial Intelligence.
+        %\end{itemize}}
+
  \twentyitem
     	{Dec 2016 -}
 		{May 2017}
@@ -160,7 +191,7 @@ Computer Science and Artificial Intelligence.
         {\href{http://www.cetaqua.com/en/cetaqua}{University of Granada \& CETAQUA foundation}}
         {}
         {\begin{itemize}
-        	\item Water-consumption forecasting in Spanish eastern cities. Data analysis, visualization and time-series forecasting. \textbf{Tools}: R, ggplot2, forecast, tsExpKit, knitr.
+        	\item Time-series forecasting applied to water-consumption in Spanish cities. \textbf{Tools}: R, ggplot2, forecast, tsExpKit, caret, tidyr, knitr.
         \end{itemize}}
         
 \\
@@ -171,7 +202,7 @@ Computer Science and Artificial Intelligence.
         {\href{http://www.granadalapalma.com/}{University of Granada \& LaPalma Cooperative}}
         {}
         {\begin{itemize}
-        	\item Crop forecasting and detection of plagues in greenhouses using weather conditions. Data analysis, visualization and time-series forecasting. \textbf{Tools}: R, ggplot2, forecast, tsExpKit, knitr.
+        	\item Time-series forecasting for production in greenhouses. \textbf{Tools}: R, ggplot2, forecast, tsExpKit, caret, tidyr, knitr.
         \end{itemize}}
         
 \\
@@ -183,9 +214,9 @@ Computer Science and Artificial Intelligence.
         {\href{https://www.ugr.es/}{University of Granada}}
         {}
         {\begin{itemize}
-        	\item Time-series forecasting of railway deficiencies. Multi-objective optimization for railway infrastructure maintenance. In cooperation with VIAS Inc., ADIF, and others.
-        	%En GEOMAF se hizo una predicción de los fallos en vías de tren usando series temporales, con R y Java y usando PMML como interfaz para portar modelos de un lenguaje a otro En OPTIRAIL hicimos generación de planes de mantenimiento de infraestructuras ferroviarias con algoritmos multiobjetivo, en R y en C++También hicimos un modelo del deterioro de las vías en función del tiempo y del mantenimiento que se le aplica, con un exponential fitting 
-        	\textbf{Tools}: R, Java, PMML, C++.
+        	\item Time-series forecasting of railway deficiencies. %Multi-objective optimization for railway infrastructure maintenance. In cooperation with VIAS Inc., ADIF, and others.
+        	%En GEOMAF se hizo una predicción de los fallos en vías de tren usando series temporales, con R y Java y usando PMML como interfaz para portar modelos de un lenguaje a otro. En OPTIRAIL hicimos generación de planes de mantenimiento de infraestructuras ferroviarias con algoritmos multiobjetivo, en R y en C++. YO ME CENTRÉ en un modelo del deterioro de las vías en función del tiempo y del mantenimiento que se le aplica, con un exponential fitting.
+        	%\textbf{Tools}: R, Java, PMML, C++.
         \end{itemize}}
         
 \\
@@ -194,33 +225,23 @@ Computer Science and Artificial Intelligence.
 		{Apr 2013}
         {Full Stack Developer \& Data Scientist}
         {\href{https://www.indracompany.com/en/}{Univ. of Granada \& Indra Systems}}
-        {}
-        {\begin{itemize}
-        	\item Development of a Eclipse plugin to code/deploy Java apps, and manage non-relational DBs in APlaCA, a cloud platform. Time-series forecasting of platform load. \textbf{Tools}: Java, Eclipse, R, HTML.
-        \end{itemize}}
-        \\
-        \twentyitem
-    	{Dec 2011 -}
-		{Mar 2012}
-        {Data Scientist}
-        {\href{http://en.orolivesur.com/}{University of Jaen \& OroLiveSur Inc.}}
-        {}
-        {\begin{itemize}
-        	\item Extraction and analysis of user-patterns in an e-commerce site. Rule learning from user-patterns. \textbf{Tools}: Java, Weka, KEEL.
-        \end{itemize}}
-        \\
-    \twentyitem
-   		{Sep 2013 -}
-		{Feb 2018}
-        {Linux Server Administrator}
-        {\href{http://sci2s.ugr.es}{SCI2S Group, Dept. of Computer Science and AI, UGR}}
-        {}
-        {
-        {\begin{itemize}
-        \item \textbf{Tools}: CentOS, LDAP, SGE, Spark, Hadoop, Ganglia, KickStart, PXE.
-        %\item TA for \textit{Data Structures}, \textit{Design and Development of Information Systems} courses (practices).
-    \end{itemize}}
+        {%\begin{itemize}
+        %	\item Development of a Eclipse plugin to deploy Java apps and manage non-relational DBs in APlaCA, a cloud computing platform. Time-series forecasting of platform load. \textbf{Tools}: Java, Eclipse, R, HTML.
+        %\end{itemize}
         }
+        {}
+        \\
+        %%\twentyitem
+    	%{Dec 2011 -}
+		%{Mar 2012}
+        %{Data Scientist}
+        %{\href{http://en.orolivesur.com/}{University of Jaen \& OroLiveSur Inc.}}
+        %{}
+        %{}
+        %{\begin{itemize}
+        %	\item Extraction and analysis of user-patterns in an e-commerce site. Rule learning applied to user-patterns. \textbf{Tools}: Java, Weka, KEEL.
+        %\end{itemize}}
+        %\\
 	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
 \end{twenty}
 
