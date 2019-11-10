@@ -1,0 +1,256 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.0 (14/7/16)
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com) and Harsh (harsh.gadgil@gmail.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%% BUILD with XELATEX, install texlive-full, and replace faEnvelopeAlt by faEnvelope
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+	%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{twentysecondcv} % a4paper for A4
+
+% Command for printing skill overview bubbles
+\newcommand\skills{ 
+~
+	\smartdiagram[bubble diagram]{
+        \textbf{Data}\\\textbf{Science},
+        \textbf{Data}\\\textbf{Wrangling},
+        \textbf{Autonomous}\\\textbf{R+D},
+        \textbf{Commun.}\\\textbf{English (C1)},
+        \textbf{Machine}\\\textbf{Learning},
+        \textbf{Data}\\\textbf{Visualization},
+        \textbf{Statistical}\\\textbf{Analysis}
+    }
+}
+
+% Programming skill bars
+\programming{{C $\textbullet$ Docker $\textbullet$ Cloud $\textbullet$ Linux scripting / 2}, {Java $\textbullet$ Git $\textbullet$ Flink $\textbullet$ R / 4}, {Scala $\textbullet$ Spark $\textbullet$ Python / 6}}
+
+% Projects text
+\software{
+\textbf{Spark-IT-FS*} - A distributed feature selection framework for Apache Spark | 111 \faStar\\
+\textbf{fast-mRMR} - mRMR feature selector for Spark | 57 \faStar\\
+\textbf{Spark-MDLP*} - A Spark implementation of the MDLP discretizer (presented in Spark Summit '17) | 39 \faStar\\
+\textbf{FeuerFreiKiller} - A deep learning project to automatically detect wildfire in nature using spectogram images.
+%\textbf{MOAReduction} - A library for streaming data reduction in MOA | 2 \faStar\\
+%\textbf{Spark-IS-streaming} A nearest neighbor classifier for high-speed big data streams with instance selection | 1 \faStar\\\\
+\\
+\textbf{*}\url{https://spark-packages.org/}.
+}
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\cvname{Sergio Ramírez Gallego} % Your name
+\cvjobtitle{ ML Engineer \& Data Scientist } % Job
+%Born in 1988 in Jaén, Spain.
+% title/career
+
+\aboutme{Born in 1988 in Jaén, Spain}
+\cvlinkedin{/in/sramirezg}
+\cvgithub{sramirez}
+\cvnumberphone{(34) 699 72 40 43} % Phone number
+\cvsite{} % Personal website
+\cvmail{srg00017@gmail.com} % Email address
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makeprofile % Print the sidebar
+
+%----------------------------------------------------------------------------------------
+%	 EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+
+\begin{twenty} % Environment for a list with descriptions+
+	\twentyitem
+    	{2018 - Now}
+        {}
+        {Self-learning: online courses (see LinkedIn profile)}
+        {\href{}{}}
+        {}
+        {}
+	\twentyitem
+    	{2013 - 2018}
+        {}
+        {Ph. D., Computer Science \textnormal{CUM LAUDE}}
+        {\href{http://www.ugr.es/}{University of Granada, Spain}}
+        {{\includegraphics[scale=0.04]{img/trophy.png}} Best Ph. D. Thesis Project award by Spanish Association of
+Artificial Intelligence (AEPIA)}
+        {}
+	
+	\twentyitem
+    	{2012 - 2013}
+        {}
+        {MSc., Soft Computing and Intelligent Systems \textnormal{(GPA: 8.1/10.0)}}
+        {\href{http://www.ugr.es/}{University of Granada, Spain}}
+        {}
+        {}
+	\twentyitem
+    	{2009 - 2012}
+		{}
+        {BEng., Computer Engineering \textnormal{(GPA: 8.8/10.0)}}
+        {\href{http://www.ujaen.es/}{University of Jaen, Spain}}
+        {}
+        {}
+   \twentyitem
+    	{2006 - 2009}
+		{}
+        {BEng., Computer Technical Engineering \textnormal{(GPA: 7.9/10.0)}}
+        {\href{http://www.ujaen.es/}{University of Jaen, Spain}}
+        {{\includegraphics[scale=0.04]{img/trophy.png}} Bachelor extraordinary award}
+        {}
+	%\twentyitem{<dates>}{<title>}{<organization>}{<location>}{<description>}
+\end{twenty}
+
+%----------------------------------------------------------------------------------------
+%	 RESEARCH
+%----------------------------------------------------------------------------------------
+
+
+\section{Research}
+\begin{twenty}
+	\twentyitem
+    	{2012 - 2018}
+		{}
+        {Ph. D. Candidate, Graduate Research and Teaching Assistant}
+        {\href{http://www.ugr.es/}{University of Granada}}
+        {}
+        {
+       	\textbf{Thesis}: Distributed Data Reduction Algorithms for Big Data
+        {\begin{itemize}
+        \item Scalable data reduction (discretization, feature and instance selection) algorithms for Spark. Achievements: fast feature selection on 30M cols (kdd2010), and discretization on 60M rows.
+        %\item Proposed an scalable method that reduces noisiness in databases fed by high-speed big data steams. Our algorithm (developed on Spark Streaming) maintains a polished case-base with the most relevant instances seen so far.
+        \item \textbf{Tools}: Spark, Scala, Java, MOA, Flink, \LaTeX, Git, Maven.
+        %\item \textbf{Internships}: Wroclaw University of Science and Technology, Poland \& M\"alardalen University, V\"aster\aa s, Sweden. 3 months each.        
+        \item Publications: \url{https://scholar.google.com/citations?user=cEkfaW4AAAAJ}
+		\end{itemize}}
+        }
+\end{twenty}
+
+%----------------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+
+
+\begin{twenty} % Environment for a list with descriptions
+
+\twentyitem
+    	{Mar 2019 - }
+		{Now}
+        {Data Scientist \& Big Data Developer}
+        {\href{https://www.docomodigital.com/}{NTT Docomo Digital Spain Inc.}}
+        {}
+        {\begin{itemize}
+        \item Projects: Default prediction in mobile billing. 
+        \item Tasks: Production-ready code for all stages in the ML pipeline. Development of a proper validation schema for uncertain and delayed labeling in imbalanced classification. Production deployment, unit testing, scaling and performance tuning. Product definition. Interviewed junior roles.
+        \item \textbf{Toolset}: Spark, Scala, Python, MongoDB, Jenkins, LDA, LightGBM.
+        \end{itemize}}
+        \\
+\twentyitem
+    	{Jun 2018 -}
+		{Mar 2019}
+        {Data Scientist \& Big Data Developer}
+        {\href{http://www.stratio.com/}{Stratio Big Data Inc.}}
+        {}
+        {\begin{itemize}
+        \item Projects: Default prediction in mobile billing. Customer churn prediction. Advertisement optimization in social media with reinforcemet learning. 
+        \item \textbf{Toolset}: Spark, Scala, Python, MongoDB, Jenkins, XGBoost, Kibana. 
+        \end{itemize}}
+        \\     %\\
+        %{\begin{itemize}
+        %\item FPU Spanish Research and Teaching Fellowship @ Department of Computer Science and Artificial Intelligence.
+        %\end{itemize}}
+
+% \twentyitem
+%    	{Dec 2016 -}
+%		{May 2017}
+%        {Data Scientist}
+%        {\href{http://www.cetaqua.com/en/cetaqua}{University of Granada \& CETAQUA foundation}}
+%        {}
+%        {\begin{itemize}
+%        	\item Time-series forecasting applied to water-consumption in Spanish cities. \textbf{Tools}: %R, ggplot2, forecast, tsExpKit, caret, tidyr, knitr.
+%        \end{itemize}}
+        
+%\\
+ %\twentyitem
+ %   	{Oct 2013 -}
+%		{Mar 2015}
+%        {Data Scientist}
+%        {\href{http://www.granadalapalma.com/}{University of Granada \& LaPalma Cooperative}}
+%        {}
+%        {\begin{itemize}
+%        	\item Time-series forecasting for greenhouse farming. \textbf{Tools}: R, ggplot2, forecast, tsExpKit, caret, tidyr, knitr.
+%        \end{itemize}}
+        
+%\\
+        
+	  %\twentyitem
+    	%{Apr 2013 -}
+		%{Dec 2013}
+        %{Data Scientist}
+        %{\href{https://www.ugr.es/}{ADIF, University of Granada and others.}}
+        %{}
+        %{\begin{itemize}
+       % 	\item Time-series forecasting of railway deficiencies. %Multi-objective optimization for railway infrastructure maintenance. In cooperation with VIAS Inc., ADIF, and others.
+        	%En GEOMAF se hizo una predicción de los fallos en vías de tren usando series temporales, con R y Java y usando PMML como interfaz para portar modelos de un lenguaje a otro. En OPTIRAIL hicimos generación de planes de mantenimiento de infraestructuras ferroviarias con algoritmos multiobjetivo, en R y en C++. YO ME CENTRÉ en un modelo del deterioro de las vías en función del tiempo y del mantenimiento que se le aplica, con un exponential fitting.
+        	%\textbf{Tools}: R, Java, PMML, C++.
+        %\end{itemize}}
+        
+
+	  \twentyitem
+    	{Dec 2011 -}
+		{Mar 2018}
+        {Data Scientist and Research Consultant}
+        {\href{https://www.indracompany.com/en/}{University of Granada}}
+        {
+        \begin{itemize}
+        	\item Projects:
+        	\begin{itemize}
+        		\item \textbf{\textit{Indra Systems}}: Workload prediction in cloud systems. Development 	of an extension for big data development in Eclipse IDE.
+        		\item \textbf{\textit{ADIF and others}}: Time-series forecasting of railway deficiencies. Multi-objective optimization for train infrastructures.
+        		\item \textbf{\textit{LaPalma cooperative}}: Forecasting of greenhouse climate conditions. Automatic code generation of analytic plots.
+        		\item \textbf{\textit{CETAQUA foundation}}: Time-series forecasting applied to water consumption in Spanish cities. Data analysis and modeling tasks.
+        	\end{itemize}
+        	\item Toolset: R, ggplot2, forecast, tsExpKit, caret, tidyr, knitr.
+        
+        \end{itemize}
+        }
+        {}
+        
+        %\begin{itemize}
+        %	\item Development of a Eclipse plugin to deploy Java apps and manage non-relational DBs in APlaCA, a cloud computing platform. Time-series forecasting of platform load. \textbf{Tools}: Java, Eclipse, R, HTML.
+        %\end{itemize}
+        %%\twentyitem
+    	%{Dec 2011 -}
+		%{Mar 2012}
+        %{Data Scientist}
+        %{\href{http://en.orolivesur.com/}{University of Jaen \& OroLiveSur Inc.}}
+        %{}
+        %{}
+        %{\begin{itemize}
+        %	\item Extraction and analysis of user-patterns in an e-commerce site. Rule learning applied to user-patterns. \textbf{Tools}: Java, Weka, KEEL.
+        %\end{itemize}}
+        %\\
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+
+\end{document} 
