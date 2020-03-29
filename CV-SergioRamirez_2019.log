@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2019.9.29)  29 MAR 2020 13:14
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2019.9.29)  29 MAR 2020 14:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -697,16 +697,16 @@ Package: fontawesome 2016/05/15 v4.6.3.1 font awesome icons
 (/usr/share/texlive/texmf-dist/tex/latex/fontawesome/fontawesomesymbols-generic
 .tex)
 Requested font "FontAwesome" at 10.0pt
- -> 
+ -> P^^0^^3^^N^^U
 Requested font "FontAwesome/OT" at 10.0pt
  -> 
 \g__fontspec_family_FontAwesome_int=\count277
 Requested font "FontAwesome/BI/OT" at 10.0pt
  -> 
 Requested font "FontAwesome/B/OT" at 10.0pt
- -> ^^P.^^ï^^%V
+ -> `^^Ü^^4^^N^^U
 Requested font "FontAwesome/I/OT" at 10.0pt
- -> ^^Ð,^^ï^^%V
+ -> ^^ ^^Ú^^4^^N^^U
 
 (/usr/share/texlive/texmf-dist/tex/latex/fontawesome/fontawesomesymbols-xeluate
 x.tex)) (/usr/share/texlive/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
